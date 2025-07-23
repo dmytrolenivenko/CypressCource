@@ -6,7 +6,7 @@ describe('Iterate over elements', () => {
         const desiredProduct = "Eau Parfumee au The Vert Shampoo";
         var counter = 0;
         cy.visit("https://automationteststore.com/");
-        cy.get(".subnav > ul > li > ").each(($el, index, $list) => {
+        cy.get(".subnav > ul > li").each(($el, index, $list) => {
             if ($el.text().trim() === desiredMenu) {
                 cy.log("Found the desired menu: " + desiredMenu);
                 cy.wrap($el).click();

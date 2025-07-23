@@ -47,7 +47,7 @@ describe('Invoke alias of Thhumbnail and perform some actions', () => {
         });
         cy.get("@allProducts").eq(0).find(".prdocutname").should('contain', 'Skinsheen Bronzer Stick'); // Assert the first product name
     });
-    it.only("Let's see how much total price of discount and Non discount items and now many of each", () => {
+    it("Let's see how much total price of discount and Non discount items and now many of each", () => {
         let normalPrice = 0;
         let salePrice = 0;
         let normalPriceCount = 0;

@@ -48,8 +48,6 @@ describe('Verifying variables, cypresss commands and jQuery commands', () => {
         cy.get("#ContactUsFrm").then($returnedElement => {
             const fieldText = $returnedElement.find("#field_12").text();
             expect(fieldText).to.contain('Email');
-
         })
-
     })
 });
