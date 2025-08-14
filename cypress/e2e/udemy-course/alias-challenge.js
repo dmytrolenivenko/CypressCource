@@ -6,7 +6,7 @@ describe('Invoke alias of Thhumbnail and perform some actions', () => {
     });
 
     it('Create an alias of thumbnails and assert alias quantity', () => {
-        cy.get(".thumbnail").as("thumbnails"); // Create an alias for thumbnails
+        cy.get(".thumbnail").as("thumbnails"); // Create an alias for thumbnails 
         cy.get("@thumbnails").then(function ($thumbnails) {
             cy.log("Total number of products: " + $thumbnails.length);
         });
